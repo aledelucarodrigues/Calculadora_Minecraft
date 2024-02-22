@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Minecrafter' ;
+    src: url('fonts/Minecrafter.Reg.ttf') format('truetype'), url('fonts/Minecrafter.Alt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Minecrafter',sans-serif;
+}
+
+body{
+    background-color: var(--lightblue);
+    /*background-image: url("./img/minecraft-plain-dirt-grass-pixelated-art-bx3spo5uy2meihoc.jpg");
+    /*Imagem de <a href="https://pixabay.com/pt/users/amrothman-13991060/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4806666">amrothman</a> por <a href="https://pixabay.com/pt//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4806666">Pixabay</a>*/
+}
+
+:root{
+    --brown: #483930;
+    --lightgreen: #04BF33;
+    --darkgreen: #1F6E4F;
+    --lightblue: #6AC4DC;
+    --darkblue: #284a53;
+    --red: #B21A2E;
+    /* Inspiração da paleta de https://color.adobe.com/pt/Paleta-de-Cores-Minecraft-color-theme-19846547/ */
+}
+
+.minecraft_title{
+    font-size: 100px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.minecraft_characters{
+    width: 550px;
+}
+
+.calculator{
+    width: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--brown);
+}
+
+table td{
+    display: inline-block;
+}
+
+.btn{
+    margin: 3px;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--darkgreen);
+    color: #dfdfdf;
+    font-size: 24px;
+    transition: all 50ms ease-in-out;
+}
+
+.btn:hover{
+    background-color: var(--lightgreen);
+}
+
+.ac{
+    background-color: var(--darkblue);
+}
+
+.ac:hover{
+    background-color: var(--lightblue);
+}
+
+.especial{
+    background-color: var(--darkblue);
+}
+
+.especial:hover{
+    background-color: var(--lightblue);
+}
+
+.igual{
+    background-color: var(--darkblue);
+}
+
+.igual:hover{
+    background-color: var(--lightblue);
+}
+
+.result{
+    height: 100px;
+    color: #dfdfdf;
+    text-align: right;
+    font-size: 35px;
+    word-wrap: break-word;
+    border-bottom: 1px solid var(--lightgreen);
+
+}
